@@ -1,0 +1,274 @@
+body{
+    background-image: url("bg.png");
+    overflow: hidden;
+
+}
+*:hover{
+cursor: none;
+}
+body:hover{
+    cursor: none;
+
+}
+html:hover{
+    cursor: none;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+#title{
+    font-family: 'Rammetto One', cursive;
+    color:#002c3a;
+    text-shadow: 3px 3px #78bcc4;
+    
+    height:10%;
+    padding-top: 1.5%;
+    
+
+}
+#content{
+    height:90%;
+}
+#given{
+    color: #f7f8f3;
+}
+#confidence{
+    color: #f7f8f3;
+}
+#time{
+    color: #f7f8f3;
+}
+#drawing{
+    color: #f7f8f3;
+}
+#given_p{
+    height:21.75%;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #78bcc4;
+    font-size: 20px;
+    color:#002c3a
+}
+#drawing_p{
+    height:21.75%;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #78bcc4;
+    font-size: 20px;
+    color:#002c3a
+}
+b{
+    font-size: 40px;
+    font-family: 'Chelsea Market', cursive;
+}
+#confidence_p{
+    height:21.75%;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #78bcc4;
+    font-size: 20px;
+    color:#002c3a
+}
+#canvas_div{
+    height:100%
+}
+#score{
+    text-align: center;
+    color: #f7f8f3;
+    
+
+
+}
+#score_p{
+    text-align: center;
+    margin-right: -5px;
+    height:45px;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #78bcc4;
+    font-size: 25px;
+    color:#002c3a;
+    width:200px;
+    border-radius: 0px 0px 0px 10px;
+    float:right;
+    box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 0.566) ;
+}
+
+#time_p{
+    height:21.75%;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #78bcc4;
+    font-size: 20px;
+    color:#002c3a
+}
+table{
+    margin-left: -2px;
+    margin-top: -2px;
+    height:100.5%;
+    width:100%;
+}
+tr{
+    height: 100%;
+}
+#ui{
+    text-align: center;
+    height: 105%;
+    width: 20%;
+    background-color: #f7f8f3; 
+    box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 0.566) ;
+    
+}
+#canvas_th{
+    height: 100%;
+    width: 76.5%;  
+
+}
+canvas{
+    border:10px #78bcc4 solid;
+    transition :  border 1s ease-out;
+    margin-top: 20px;
+    
+}
+canvas:active{
+    border:10px #002c3a solid;
+}
+canvas:hover{
+    cursor: none;
+}
+#follow{
+    height: 10px;
+    width:10px;
+    position: absolute;
+    background-color: #002c3a;
+    opacity: 0.5;
+    border-radius: 100%;
+    top:50%;
+    z-index:10000000000
+}
+
+  #controls{
+    box-shadow:  0px 0px 20px 3px rgba(0, 0, 0, 0.566) ;
+     position: absolute;
+    background-color: #78bcc4;
+    position:absolute;
+    width:77.5%;
+    right: 0%;
+    bottom: 0%;
+    height:90px;
+    border-radius: 20px 0 0 0;
+  }
+  #erase{
+    right:22.75%;
+    position: absolute;
+    width:20%;
+height:70%;
+margin-top:15px;
+border-radius: 0px;
+background-color: #f7f8f3;
+color: #002c3a;
+border: 3px #002c3a solid;
+font-size: 20px;
+font-family: 'Chelsea Market', cursive;
+  }
+  #erase:hover{
+    cursor: none;
+  }
+  #clear:hover{
+    cursor: none;
+  }
+  #erase:focus{
+    cursor: none;
+  }
+  #clear:focus{
+    cursor: none;
+  }
+  #clear{
+    
+    border-radius: 0px;
+   right: 1.25%;
+    position: absolute;
+    width:20%;
+height:70%;
+margin-top:15px;
+background-color:#f7444e;
+border: 3px #f7f8f3 solid;
+color: #f7f8f3;
+font-size: 20px;
+font-family: 'Chelsea Market', cursive;
+
+
+  }
+  #slider {
+    position: absolute;
+    appearance: none;
+     width: 30%;
+     height: 10px;
+     background: #002c3a;
+     outline: none;
+    border-radius: 100px;
+  cursor:none;
+  margin-top:60px;
+  left:50px
+ 
+   }
+   
+ 
+   
+   #slider::-webkit-slider-thumb {
+     appearance: none;
+ 
+ border-radius: 100%;
+ height:20px;
+ width:20px;
+     background: #f7444e;
+     cursor: none;
+     
+   }
+   #thick{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 30%;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #002c3a;
+    left:50px
+   }
+   #colors{
+    border-radius: 0px;
+    right: 44.25%;
+     position: absolute;
+     width:18%;
+ height:70%;
+ margin-top:15px;
+
+ border: 3px #002c3a solid;
+ color: #f7f8f3;
+ font-size: 20px;
+ font-family: 'Chelsea Market', cursive;
+   }
+   .color{
+
+    font-family: arial;
+    position: absolute;
+    width:25%;
+    margin:0;
+    padding: 0;
+color:white;
+    height:100%;
+   margin-right: 0px;
+   cursor: none;
+font-weight: bolder;
+font-size: 30px;
+   }
+
+
+   #clear:hover{
+    background-color:#f7f8f3;
+    border-color:#f7444e;
+    color: #f7444e;
+    
+   }
+   #clear:active{
+    background-color:#f7444e;
+    border-color:#f7f8f3;
+    color: #f7f8f3;
+   }

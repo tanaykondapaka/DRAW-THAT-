@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            DRAW THAT!
+        </title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Balsamiq+Sans:wght@400;700&family=Chelsea+Market&family=Rammetto+One&display=swap" rel="stylesheet">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <th id="ui">
+         <h1 id="title">DRAW<br>THAT!</h1>
+         <div id="content">
+         <p id="given_p"><br>What to Draw - <br><b id="given"></b></p>
+         <br>
+         <p id="drawing_p"><br>Your Drawing - <br><b id="drawing"></b></p>
+         <br>
+         <p id="confidence_p"><br>Confidence - <br><b id="confidence"></b></p>
+         <br>
+         <p id="time_p"><br><br><b id="time"></b> Seconds</p>
+         </div>
+        </th>
+        <th id="canvas_th">
+            <p id="score_p">Score - <b id="score" style="font-size: 30px;">0</b></p>
+          <div id="canvas_div" ></div>
+          
+        </th>
+        <div id="controls">
+            <h1 id="thick">Pen Width</h1>
+        <input type="range" min="1" max="100" value="10" id="slider"> 
+       <div id="colors">
+<button class="color" onclick="fblack()" style="left:0%; background-color: black;" id="black">
+
+</button>
+<button class="color" onclick="fred()" style="left:25%; background-color: red;" id="red">
+
+</button>
+<button class="color" onclick="fgreen()" style="left:50%; background-color: green;" id="green">
+
+</button>
+<button class="color" onclick="fblue()" style="left:75%; background-color: blue;" id="blue">
+
+</button>
+</div>
+        <button id="erase" onclick="eraser()">
+            Eraser
+        </button>
+        <button id="clear" onclick="background('white');" onmouseover="document.getElementById('clear').innerHTML='Are You Sure?'" onmouseleave="document.getElementById('clear').innerHTML='Clear Canvas'">
+Clear Canvas
+        </button>
+
+    </div>
+    </tr>
+   
+</table>
+
+<div id="follow"></div>
+</body>
+<script src="main.js"></script>
+</html>
